@@ -13,8 +13,10 @@ import Navbar from "./Components/navbar";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "New Remix App",
+  title: "Ekky Mulia Lasardi | Website",
   viewport: "width=device-width,initial-scale=1",
+  keywords: "Ekky Mulia Lasardi, Ekky Mulia Lasardi Website",
+  description: "Ekky Mulia Lasardi Portfolio Website"
 });
 
 export const links: LinksFunction = () => {
@@ -30,6 +32,11 @@ export const links: LinksFunction = () => {
     {
       rel: "stylesheet",
       href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+    },
+    {
+      rel: "icon",
+      href: "/asset/icons/logo2.svg",
+      type: 'image/svg'
     },
   ];
 };
