@@ -4,4 +4,6 @@ node_modules
 /functions/\[\[path\]\].js
 /functions/\[\[path\]\].js.map
 /public/build
+/public/asset/icons
+/public/asset/image/porto
 .env

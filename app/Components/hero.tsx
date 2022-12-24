@@ -21,30 +21,30 @@ const Hero = () => {
                     </span>
                 </div>
                 <div className="col-span-12 lg:col-span-10 p-5 m-5 flex flex-col justify-evenly">
-                    <h3 className="text-2xl mb-6 lg:mb-0">
+                    <h2 className="text-2xl mb-6 lg:mb-0">
                         Hellooooo ! 👋 <br/>
                         Thanks for dropping by!
-                    </h3>
+                    </h2>
 
                     <div className="grid grid-cols-8">
-                        <h3 className="col-span-8 text-2xl">
+                        <h1 className="col-span-8 text-2xl">
                         Ekky here,<br/> 
                         I’m a Software Developer, but 
                         now mainly focused on Front
                         End Website and Design
-                        </h3>
+                        </h1>
 
                             <ContactsIcon/>
 
 
                         <div className="col-span-8">
-                        <SpanLink text="Figure out how do i make my website" linkto="#"/>
+                        <SpanLink text="Figure out how do i make my website" linkto="/contact"/>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="hidden lg:block lg:col-span-6 col-span-12 lg:flex flex-col justify-evenly gap-1 items-center border-b-2 border-black">
-                <ButtonCard textProps="See all the things about<br/>my life!"/>
+                <ButtonCard textProps="See all the things about<br/>my life!" linkTo="/journal"/>
                 <ButtonCard textProps="Discover my personal and<br/>work portfolio"/>
             </div>
         </div>

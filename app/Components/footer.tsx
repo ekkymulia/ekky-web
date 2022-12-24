@@ -3,15 +3,15 @@ import ContactsIcon from "./MicroComponents/contacts-icons";
 
 const Footer = () => {
     return (
-        <div className="mx-4 lg:mx-20 mt-12 grid grid-cols-12">
+        <div className="mx-4 lg:mx-20 mt-12 mb-4 grid grid-cols-12">
             <div className="col-span-12 lg:col-span-6">
                 <h3 className="text-2xl mb-2">Let's call it a day!😉</h3>
                 <p>
                     You've reached the end of my page, but why don't you checkout my blog or contact me if you wanted to collaborate!
                 </p>
-                    <ButtonCard additionalClass="my-12 lg:my-12" textProps="Contact Page"/>
+                    <ButtonCard additionalClass="my-12 lg:my-12" textProps="Contact Page" linkTo="/contact"/>
 
-                    <ButtonCard additionalClass="mb-12 lg:my-12" textProps="Checkout my<br/>blogs"/>
+                    <ButtonCard additionalClass="mb-12 lg:my-12" textProps="Checkout my<br/>blogs" linkTo="/journal"/>
             </div>
             <div className="col-span-12 lg:col-span-6 items-center lg:px-12">
                 <p className="mx-auto text-justify">

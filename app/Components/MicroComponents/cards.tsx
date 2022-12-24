@@ -1,5 +1,6 @@
 import { FC } from "react";
 import SpanLink from "./span-link";
+import { Link } from "@remix-run/react";
 
 type CardsProps = {
     jobType: string,
@@ -12,7 +13,7 @@ type CardsProps = {
 const Cards:FC<CardsProps> = ({jobType, projectName, year, projectType, linkTo}) => {
     return (
         <div className="min-w-[20%] max-w-[20%] px-4">
-            <a href="#" className="group relative block h-96">
+            <Link to="#" className="group relative block h-96">
             <span className="absolute inset-0 border-2 border-dashed border-black"></span>
                 <div
                     className="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
@@ -44,7 +45,7 @@ const Cards:FC<CardsProps> = ({jobType, projectName, year, projectType, linkTo})
                     </h2>
                     </div>
                 </div>
-            </a>
+            </Link>
         </div>
     );
 };

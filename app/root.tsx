@@ -10,6 +10,7 @@ import {
 import type { LinksFunction } from "@remix-run/react/dist/routeModules";// or cloudflare/deno
 import { CSSProperties } from "react";
 import Navbar from "./Components/navbar";
+import FootNote from "./Components/foot-note";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -61,6 +62,7 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <FootNote/>
       </body>
     </html>
   );
