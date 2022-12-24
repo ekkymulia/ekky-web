@@ -4,6 +4,7 @@ import { getPostData } from "~/models/post.server";
 import urlFor from '../../../sanityClient'
 import {PortableText} from '@portabletext/react'
 
+//fetching data from sanity
 export async function loader({ params }) {
     const { result } = await getPostData(params.slug)
     console.log(result, params)

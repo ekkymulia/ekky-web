@@ -1,3 +1,4 @@
+//creating dynamic sitemap
 export const getSlugs = async () => {
     const response = await fetch(
         `https://tgh6xlex.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20%22post%22%5D%7B%0A%20%20%22slug%22%3A%20%22journal%2F%22%20%2B%20slug.current%0A%7D%0A%0A`
