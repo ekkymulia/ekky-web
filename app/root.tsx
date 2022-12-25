@@ -25,7 +25,7 @@ export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "Ekky Mulia Lasardi | Website",
   viewport: "width=device-width,initial-scale=1",
-  keywords: "Ekky Mulia Lasardi, Ekky Mulia Lasardi Website, Ekky, Ekky Mulia, ekky, ekky mulia, ekky mulia lasardi",
+  keywords: "Ekky Mulia Lasardi, Ekky Mulia Lasardi Website, Ekky, Ekky Mulia, ekky, ekky mulia, ekky mulia lasardi, kymulia, Kymulia",
   description: "Ekky Mulia Lasardi Portfolio Website",
   og:{
     title: "Ekky Mulia Lasardi | Website",
