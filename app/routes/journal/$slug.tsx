@@ -7,7 +7,6 @@ import {PortableText} from '@portabletext/react'
 //fetching data from sanity
 export async function loader({ params }) {
     const { result } = await getPostData(params.slug)
-    console.log(result, params)
     return result[0];
 }
 
@@ -26,7 +25,7 @@ const Slug = () => {
                 {
                     resultQuery && resultQuery.mainImage ? (
                         <div className="mt-4 mb-8 flex">
-                            <img className="lg:min-w-[100%] lg:max-w-[100%] min-w-[100%] mb-2" src={urlFor(resultQuery.mainImage.asset._ref).url()} alt="profile-pict"/>
+                            <img className="lg:min-w-[100%] lg:max-w-[100%] min-w-[100%] mb-2" src={urlFor(resultQuery.mainImage.asset._ref).url()} alt={resultQuery.mainImage.asset._ref}/>
                         </div>
                     ) : undefined
                 }

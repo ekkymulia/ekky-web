@@ -22,7 +22,7 @@ const Contact = () => {
                 </div>
                 <div className="col-span-12 lg:col-span-6 mt-4 lg:mt-0">
                     <p className="mx-auto text-justify">
-                        This website was created with Remix.JS and React.JS for JS (Frontend) Framwork and also Tailwind CSS for CSS (Styling) Framework. I deployed this to cloudflare pages and getting a domain from github student.<br/><br/>
+                        This website was created with Remix.JS and React.JS for JS (Frontend) Framwork and also Tailwind CSS for CSS (Styling) Framework. I deployed this website to cloudflare pages and getting data dynamicly from Sanity.io as the Headless CMS provider.<br/><br/>
                         This website was inspired by Flat and Neo-Brutalism Design such as Gumroad and Notion while i was designing it with figma.<br/><br/>
                         if you want to do a project or get to know me better, don't hesitate to contact me via social media!.<br/>
                     </p>

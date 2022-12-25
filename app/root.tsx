@@ -1,23 +1,37 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
 import {
+  Link,
   Links,
   LiveReload,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
+  useCatch,
+  useLoaderData,
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/react/dist/routeModules";// or cloudflare/deno
 import { CSSProperties } from "react";
 import Navbar from "./Components/navbar";
 import FootNote from "./Components/foot-note";
+import { PAGE_META } from "./Components/navbar";
+
+
+// export const handle = {
+//   pageMeta: {PAGE_META.INDEX},
+// };
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "Ekky Mulia Lasardi | Website",
   viewport: "width=device-width,initial-scale=1",
-  keywords: "Ekky Mulia Lasardi, Ekky Mulia Lasardi Website",
-  description: "Ekky Mulia Lasardi Portfolio Website"
+  keywords: "Ekky Mulia Lasardi, Ekky Mulia Lasardi Website, Ekky, Ekky Mulia, ekky, ekky mulia, ekky mulia lasardi",
+  description: "Ekky Mulia Lasardi Portfolio Website",
+  og:{
+    title: "Ekky Mulia Lasardi | Website",
+    type: "portfolio",
+    url: "kymulia.me"
+  }
 });
 
 export const links: LinksFunction = () => {
@@ -47,6 +61,29 @@ const BodyStyle: CSSProperties = {
   fontWeight: '500'
 }
 
+export function CatchBoundary() {
+  const caught = useCatch();
+
+  return (
+    <html>
+      <head>
+        <title>Oops!</title>
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        <h1>
+          Sorry, {caught.status} {caught.statusText}
+        </h1>
+        <a href='/'>◀ Back to Home</a>
+        <Scripts />
+      </body>
+    </html>
+
+  );
+}
+
+
 export default function App() {
   return (
     <html lang="en">
@@ -55,15 +92,33 @@ export default function App() {
         <Links />
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://unpkg.com/feather-icons"></script>
-      </head>
-      <body style={BodyStyle}>
-        <Navbar/>
+        <script>: {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-53CH23T');`}</script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDJ21NSFEC"></script>
+        <script>
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-LDJ21NSFEC');`}
+        </script>
+    </head>
+    <body style={BodyStyle}>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53CH23T"
+          height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
+        <Navbar />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
-        <FootNote/>
-      </body>
+        <FootNote />
+    </body>
+      
     </html>
   );
 }
+
+
