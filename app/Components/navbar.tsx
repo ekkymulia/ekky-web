@@ -28,6 +28,11 @@ export const PAGE_META = {
         text: 'Contact',
         order: 3,
         slugMeta: 'Contact'
+    },
+    PROJECT: {
+        text: 'Project',
+        order: 4,
+        slugMeta: 'Project'
     }
 }
 
@@ -128,6 +133,18 @@ const Navbar = () => {
                             }
                         >
                             Contact Page
+                        </NavLink>
+                    </li>
+
+                    <li className="hidden ml-4 col-span-2">
+                        <NavLink
+                            to="/project"
+                            onClick={(e) => navAnimChanger(e, PAGE_META.PROJECT)}
+                            style={({ isActive }) =>
+                            isActive ? sectionChanger(PAGE_META.PROJECT) : undefined
+                            }
+                        >
+                            Project Page
                         </NavLink>
                     </li>
                 </ul>

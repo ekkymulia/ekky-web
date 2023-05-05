@@ -5,7 +5,7 @@ import SpanLink from "./MicroComponents/span-link";
 import { useLoaderData } from "@remix-run/react";
 import { portfolioSummaryType } from "~/models/type";
 
-const Portofolio = () => {
+const Portofolio2 = () => {
     const { result } = useLoaderData()
 
     return (
@@ -15,8 +15,6 @@ const Portofolio = () => {
             </h2>
 
             <span className="text-2xl">Paid Projects</span>
-            <SpanLink text="Click for details" linkto="project"/>
-
             <div className="my-12 flex justify-between">
                 <Marquee gradient={false} style={{ padding: '20px' }} pauseOnClick={true}>
                 {
@@ -28,7 +26,6 @@ const Portofolio = () => {
             </div>
 
             <span className="text-2xl">Personal Projects</span>
-            <SpanLink text="Click for details" linkto="project"/>
             <div className="my-12 flex justify-between">
                 <Marquee gradient={false} style={{ padding: '20px' }} pauseOnClick={true} direction="right">
                 {
@@ -42,4 +39,4 @@ const Portofolio = () => {
     );
 };
 
-export default Portofolio;
+export default Portofolio2;
