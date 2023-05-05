@@ -290,7 +290,7 @@ const Recai = () => {
                         </div>
                     </div>
                     <div className="col-span-12 lg:col-span-6 mt-4 lg:mt-0">
-                        <h3>Deskripsi:</h3>
+                        <h3>Description:</h3>
                         <p className="mx-auto text-justify">
                         Recycle AI is an Image Recognition app that uses Machine Learning and Computer Vision to detect types of recycable trash and also integrate with Open AI. In current state of Pre-Alpha, Recycle AI has some limitation such as small image dataset (est. 1000 pict), and not many different kind of objects that it could recognize.
                         <br/><br/>
