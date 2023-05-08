@@ -11,6 +11,8 @@ let detected_text = "";
 
 let detected = null;
 let chatgpt_p = null;
+let detectedcounter = 0
+
 
 // Load the image model and setup the webcam
 export async function initgoo() {
@@ -64,13 +66,17 @@ export async function predict() {
             prediction[i].className + ": " + prediction[i].probability.toFixed(2);
         labelContainer.childNodes[i].innerHTML = classPrediction;
         if (prediction[i].probability.toFixed(2) == 1){
-            detected.innerHTML = `Detected: ${prediction[i].className}`
-            // chatgpt_p.innerHTML = `Chat GPT: <button type="button" onClick={handleDetected()}>Click here to generate chat</button>`
-            detected_text = `${prediction[i].className}`
+            detectedcounter++
 
-            //break/pause the loop
-            detected = null
-            detected.innerHTML
+            if(detectedcounter < 5){
+                detected.innerHTML = `Detected: ${prediction[i].className}`
+                // chatgpt_p.innerHTML = `Chat GPT: <button type="button" onClick={handleDetected()}>Click here to generate chat</button>`
+                detected_text = `${prediction[i].className}`
+
+                //break/pause the loop
+                detected = null
+                detected.innerHTML
+            }
         }
     }
 }
