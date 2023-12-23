@@ -25,12 +25,12 @@ export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "Ekky Mulia Lasardi | Website",
   viewport: "width=device-width,initial-scale=1",
-  keywords: "Ekky Mulia Lasardi, Ekky Mulia Lasardi Website, Ekky, Ekky Mulia, ekky, ekky mulia, ekky mulia lasardi, kymulia, Kymulia",
-  description: "Ekky Mulia Lasardi Portfolio Website",
+  keywords: "Ekky Mulia Lasardi, Ekky Mulia Lasardi Website, Ekky, Ekky Mulia, ekky, ekky mulia, ekky mulia lasardi, kymulia, Kymulia, kymulia.me, kymulia.com",
+  description: "Ekky Mulia Lasardi Portfolio Website, Previously known as Kymulia.me but now changed to kymulia.com",
   og:{
     title: "Ekky Mulia Lasardi | Website",
     type: "portfolio",
-    url: "kymulia.me"
+    url: "kymulia.com"
   }
 });
 

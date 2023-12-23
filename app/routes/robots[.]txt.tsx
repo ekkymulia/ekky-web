@@ -8,7 +8,7 @@ export const loader = () => {
     User-agent: *
     Allow: /
 
-    Sitemap: http://www.kymulia.me/sitemap.xml
+    Sitemap: http://www.kymulia.com/sitemap.xml
     `
   // return the text content, a status 200 success response, and set the content type to text/plain 
   

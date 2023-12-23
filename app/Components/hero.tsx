@@ -30,8 +30,7 @@ const Hero = () => {
                         <h1 className="col-span-8 text-2xl">
                         Ekky here,<br/> 
                         I’m a Software Developer, but 
-                        now mainly focused on Front
-                        End Website and Design
+                        now mainly focused on Fullstack and Generative AI
                         </h1>
 
                             <ContactsIcon/>

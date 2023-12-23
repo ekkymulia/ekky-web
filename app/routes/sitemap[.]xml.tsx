@@ -21,15 +21,15 @@ export const loader: LoaderFunction = async () => {
 
 const renderXML = (slugs) => {
 console.log(slugs)
-  const url = "https://www.kymulia.me";
+  const url = "https://www.kymulia.com";
 
   const sourceXML = `<?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.kymulia.me/journal</loc>
+        <loc>https://www.kymulia.com/journal</loc>
     </url>
     <url>
-        <loc>https://www.kymulia.me/contact</loc>
+        <loc>https://www.kymulia.com/contact</loc>
     </url>
     ${slugs.result.map((item) => `<url>
       <loc>${url}/${item.slug}</loc>
