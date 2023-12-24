@@ -1,5 +1,6 @@
 import { useTransition } from "@remix-run/react";
 import SpanLink from "~/Components/MicroComponents/span-link";
+import Marquee from "react-fast-marquee";
 
 const index = () => {
     const transition = useTransition();
@@ -15,10 +16,21 @@ const index = () => {
                   <SpanLink text="Read Chapter 2" linkto="#"/>
                 </div>
             </div>
-            <div className="hidden lg:block">
+            <Marquee gradient={false} autoFill={true}>
+            <div className="hidden lg:block mx-2">
                 <img className="lg:min-w-[100%] lg:max-w-[100%] min-w-[100%] mb-2" src="/asset/image/profile-pic.png" alt="profile-pict"/>
-                <span className="text-sm font-normal ml-2">📍 Taken in IPB Bogor - 2022</span>
+                <span className="text-sm font-normal ml-2">📍 Taken in IPB Bogor - 2022 by Ferrol Azki</span>
             </div>
+            <div className="hidden lg:block mx-2">
+                <img className="lg:min-w-[100%] lg:max-w-[100%] min-w-[10%] mb-2 border-4 border-black rounded-lg" src="/asset/image/gallery/ekky-atgoogleindo.JPG" alt="ekky-at-google-indo"/>
+                <span className="text-sm font-normal ml-2">📍 Taken in Google Indonesia - 2023 by Luthfi Dika Chandra</span>
+            </div>
+            <div className="hidden lg:block mx-2">
+                <img className="lg:min-w-[100%] lg:max-w-[100%] min-w-[10%] mb-2 border-4 border-black rounded-lg" src="/asset/image/gallery/ekky-atlabkom-cbprg.jpeg" alt="ekky-at-labkom-cb-prg"/>
+                <span className="text-sm font-normal ml-2">📍 Taken in IPB Bogor - 2023 by Mia Putri Yeza</span>
+            </div>
+        
+            </Marquee>
         </div>
     );
 };
