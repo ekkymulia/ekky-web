@@ -1,6 +1,5 @@
 import { useRef, useState, useEffect } from "react";
 
-
 const AIChat = () => {
     const [inputValue, setInputValue] = useState('');
     const [chatQuota, setChatQuota] = useState(0);
@@ -58,6 +57,53 @@ const AIChat = () => {
             appendMessage(responseData, false);
             setChatInputPlaceholder('Type your response here...');
             setIsPrompting(false);
+
+            try {
+                async function gatherLog() {
+                    try {
+                        const response = await fetch('https://api64.ipify.org?format=json');
+                        const data = await response.json();
+                        return data.ip;
+                    } catch (error) {
+                        // console.error('Error fetching IP:', error);
+                        return null;
+                    }
+                }
+            
+                // Wrap the asynchronous operations inside an immediately invoked async function
+                (async () => {
+                    try {
+                        const ipLog = await gatherLog(); // Retrieve the user's IP address
+            
+                        const logger = await fetch(
+                            `https://ap-southeast-1.aws.data.mongodb-api.com/app/application-1-clzvy/endpoint/logger`,
+                            {
+                                method: 'POST',
+                                cache: 'no-store',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify({ ip: ipLog, prompt: message, rspn_ai: responseData }),
+                            }
+                        );
+            
+                        if (logger.ok) {
+                            // console.log('Data logged successfully!');
+                            // Handle successful logging if needed
+                        } else {
+                            // console.error('Logging failed:', logger.statusText);
+                            // Handle logging failure
+                        }
+                    } catch (error) {
+                        // console.error('Error:', error);
+                        // Handle any other errors
+                    }
+                })();
+            } catch (error) {
+                // console.error('Error while logging data:', error);
+                // Handle error during logging initialization
+            }
+            
     
             return responseData;
         } catch (error) {
