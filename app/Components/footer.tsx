@@ -15,8 +15,9 @@ const Footer = () => {
             </div>
             <div className="col-span-12 lg:col-span-6 items-center lg:px-12">
                 <p className="mx-auto text-justify">
-                I created this website using Remix.JS, React.JS, and Tailwind CSS, and deployed it to Cloudflare Pages. I used Sanity.io as the headless CMS provider to power the dynamic content on the site. The design of the website was inspired by flat and neo-brutalist designs, such as Gumroad and Notion, and was created using Figma. If you're interested in working on a project together or getting to know me better, don't hesitate to reach out to me through social media!<br/>
-                </p>
+                I created this website using Remix.JS, React.JS, and Tailwind CSS, and deployed it to Cloudflare Pages. I used Sanity.io as the headless CMS provider to power the dynamic content on the site. The design of the website was inspired by flat and neo-brutalist designs, such as Gumroad and Notion, and was created using Figma. If you're interested in working on a project together or getting to know me better, don't hesitate to reach out to me through social media!. Used to be Kymulia.me in 2022-2023 but now changed to Kymulia.com in 2024!<br/>
+                </p><br/>
+                <p className="text-sm font-thin mb-6 lg:mb-6">Update log (24/12/23): Happy new year 2024 🎉 </p><br/>
                 <div className="grid grid-cols-6">
                     <div className="col-span-3">
                         <ContactsIcon/>

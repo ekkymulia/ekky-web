@@ -43,7 +43,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="p-5 pb-10 mb-10 lg:pb-0 lg:mb-0  lg:col-span-6 col-span-12 lg:flex flex-col justify-evenly gap-1 px-4 border-b-2 border-black">
+            <div className="p-5 lg:px-8 pb-10 mb-10 lg:pb-0 lg:mb-0  lg:col-span-6 col-span-12 lg:flex flex-col justify-evenly gap-1 px-4 border-b-2 border-black">
                 <div>
                     <span className="text-2xl">🤖🤖</span>
                     <h3 className="text-2xl mb-6 lg:mb-0">Checkout New Experiment here! Try: Ekky AI</h3>

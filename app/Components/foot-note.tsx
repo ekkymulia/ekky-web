@@ -10,11 +10,11 @@ const FootNote = () => {
             <div className="p-2 border-solid border-y-2 border-black col-span-8 lg:col-span-10 items-center">
                 <Marquee gradient={false}>
                     ‎💼 Made by Ekky Mulia Lasardi - Dec.2022 😺‎ 
-                    Made by Ekky Mulia Lasardi - Dec.2022 👻‎ 
+                    Updated to Kymulia.com - Dec.2023! 👻‎ 
                     Made by Ekky Mulia Lasardi - Dec.2022 🐱‍💻‎ 
-                    Made by Ekky Mulia Lasardi - Dec.2022 🐾‎ 
+                    Updated to Kymulia.com - Dec.2023! 🐾‎ 
                     Made by Ekky Mulia Lasardi - Dec.2022 🎇‎ 
-                    Made by Ekky Mulia Lasardi - Dec.2022 📝‎ 
+                    Updated to Kymulia.com - Dec.2023! 📝‎ 
                     Made by Ekky Mulia Lasardi - Dec.2022 
                 </Marquee>
             </div>

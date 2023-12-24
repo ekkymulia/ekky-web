@@ -22,7 +22,7 @@ const Contact = () => {
                 </div>
                 <div className="col-span-12 lg:col-span-6 mt-4 lg:mt-0">
                     <p className="mx-auto text-justify">
-                    I created this website using Remix.JS, React.JS, and Tailwind CSS, and deployed it to Cloudflare Pages. I used Sanity.io as the headless CMS provider to power the dynamic content on the site. The design of the website was inspired by flat and neo-brutalist designs, such as Gumroad and Notion, and was created using Figma. If you're interested in working on a project together or getting to know me better, don't hesitate to reach out to me through social media!.<br/>
+                    I created this website using Remix.JS, React.JS, and Tailwind CSS, and deployed it to Cloudflare Pages. I used Sanity.io as the headless CMS provider to power the dynamic content on the site. The design of the website was inspired by flat and neo-brutalist designs, such as Gumroad and Notion, and was created using Figma. If you're interested in working on a project together or getting to know me better, don't hesitate to reach out to me through social media!. This website used to be Kymulia.me in 2022-2023 but now changed to Kymulia.com in 2024!<br/>
                     </p>
                 </div>
             </div>
