@@ -1,3 +1,4 @@
+import ButtonCard from "./MicroComponents/button-card";
 import SpanLink from "./MicroComponents/span-link";
 
 const Identity = () => {
@@ -476,6 +477,9 @@ const Identity = () => {
                             <path d="M96.0607 13.0607C96.6464 12.4749 96.6464 11.5251 96.0607 10.9393L86.5147 1.3934C85.9289 0.807611 84.9792 0.807611 84.3934 1.3934C83.8076 1.97919 83.8076 2.92893 84.3934 3.51472L92.8787 12L84.3934 20.4853C83.8076 21.0711 83.8076 22.0208 84.3934 22.6066C84.9792 23.1924 85.9289 23.1924 86.5147 22.6066L96.0607 13.0607ZM0 13.5H95V10.5H0V13.5Z" fill="black"/>
                         </svg>
                     </span>
+                </div>
+                <div className="flex mt-5 pt-5 justify-center lg:mt-5 lg:pt-5 items-center">
+                    <ButtonCard textProps="Discover my personal and<br/>work portfolio" linkTo="/project"/>
                 </div>
             </div>
         </div>

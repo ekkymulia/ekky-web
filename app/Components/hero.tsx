@@ -2,6 +2,7 @@ import { CSSProperties } from "react";
 import ButtonCard from "./MicroComponents/button-card";
 import SpanLink from "./MicroComponents/span-link";
 import ContactsIcon from "./MicroComponents/contacts-icons";
+import AIChat from "./aichat";
 
 const verticalText:CSSProperties = {
     writingMode: 'vertical-lr',
@@ -42,9 +43,19 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="hidden lg:block lg:col-span-6 col-span-12 lg:flex flex-col justify-evenly gap-1 items-center border-b-2 border-black">
-                <ButtonCard textProps="See all the things about<br/>my life!" linkTo="/journal"/>
-                <ButtonCard textProps="Discover my personal and<br/>work portfolio"/>
+            <div className="p-5 pb-10 mb-10 lg:pb-0 lg:mb-0  lg:col-span-6 col-span-12 lg:flex flex-col justify-evenly gap-1 px-4 border-b-2 border-black">
+                <div>
+                    <span className="text-2xl">🤖🤖</span>
+                    <h3 className="text-2xl mb-6 lg:mb-0">Checkout New Experiment here! Try: Ekky AI</h3>
+                    <h4 className="mb-4 lg:mb-4">
+                        Prototype v1 - Experiment (Dec 24, 2023)
+                    </h4>
+                    <p className="mb-2 lg:mb-2">This AI is a prototype experiment using a hosted llama-2-7b-chat model hosted with serverless method. the model is preconfigured with ekky basic information and supports conversational chain stored in client. </p>
+                    <p className="text-sm font-thin mb-6 lg:mb-6">Please Notice: only supports in english right now, because of the model i used. currently it only have small data about me, so it may make up some answer</p>
+                </div>
+                <AIChat/>
+
+                {/* <ButtonCard textProps="See all the things about<br/>my life!" linkTo="/journal"/> */}
             </div>
         </div>
     );
