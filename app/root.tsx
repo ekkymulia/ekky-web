@@ -74,7 +74,8 @@ export function CatchBoundary() {
       <body>
         <h1>
           Sorry, {caught.status} {caught.statusText}
-        </h1>
+        </h1><br />
+        <h2>If it occurs when you want to see my portfolio. please check the url, it should be: https://kymulia.com/project/"projectname"</h2>
         <a href='/'>◀ Back to Home</a>
         <Scripts />
       </body>
